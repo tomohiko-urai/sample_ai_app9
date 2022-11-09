@@ -50,10 +50,9 @@ if img_file is not None:
         # CNNのモデルを構築 --- (※3)
         model = shinemuscat_chk.build_model(X.shape[1:])
         model.load_weights("shinemuscat-color4-model_30_300_yellow-b_green-1-2_grenn-3-4b.hdf5")
-     　 # データを予測 --- (※4)
-      
         pre = model.predict(X)
         y=0
+        # CNNのモデルを構築    　 #######y=0
         y = pre.argmax()
         #st.image(img, caption="対象の画像", width=480)
         #st.write("")
