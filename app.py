@@ -19,7 +19,7 @@ image_size = 50
 ###categories = ["yellow","green-1","green-2","green-3-4"]
 categories = ["yellow","green-1-2","green-3-4"]
 ####camerapos = ["0","1","2","3"]
-camerapos = ["0","1","3"]
+camerapos = ["0","1","2"]
 ### 20220903 camerapos = ["0","1","2"]
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
