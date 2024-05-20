@@ -27,7 +27,7 @@ st.sidebar.title("シャインマスカット画像収穫認識アプリ")
 st.sidebar.write("オリジナルの画像認識モデルを使ってシャインマスカット収穫色判定をします。")
 
 st.sidebar.write("")
-col1,col2 = st.columns(2)
+col1,col2,col3 = st.columns(3)
 
 img_source = st.sidebar.radio("画像のソースを選択してください。",
                               ("画像をアップロード", "カメラで撮影"))
@@ -41,7 +41,8 @@ elif img_source == "カメラで撮影":
 if img_file is not None:
     with st.spinner("推定中..."):
         img = Image.open(img_file)
-        st.image(img, caption="対象の画像", width=480)
+    with col2:
+        st.image(img, caption="対象の画像", width=280)
         st.write("")
 
         img = img.convert("RGB")
@@ -65,6 +66,7 @@ if img_file is not None:
         #results = predict(img)
 
         # 結果の表示
+    with col3:
         st.subheader("判定結果")
         st.write(camerapos[y] + "です。")
         st.write(categories[y] + "です。")
