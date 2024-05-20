@@ -29,7 +29,7 @@ st.sidebar.write("")
 col1, col2 = st.columns(2)
 
 with col1:
-img_file = st.camera_input("カメラで撮影")
+    img_file = st.camera_input("カメラで撮影")
 
 with col2:
 if img_file is not None:
