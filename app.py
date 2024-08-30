@@ -23,8 +23,8 @@ camerapos = ["0","1","2"]
 ### 20220903 camerapos = ["0","1","2"]
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
-st.sidebar.title("シャインマスカット画像収穫認識アプリ")
-st.sidebar.write("オリジナルの画像認識モデルを使ってシャインマスカット収穫色判定をします。")
+st.sidebar.title("シャインマスカット画像による収穫支援アプリ")
+st.sidebar.write("シャインマスカット収穫色判定をします。")
 
 st.sidebar.write("")
 col1,col2 = st.columns(2)
