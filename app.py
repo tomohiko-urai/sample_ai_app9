@@ -37,7 +37,7 @@ if img_source == "画像をアップロード":
     with col2: 
         img_file = st.sidebar.file_uploader("画像を選択してください。", type=["png", "jpg"])
 elif img_source == "カメラで撮影":
-    with col1: 
+    with col2: 
         img_file = st.camera_input("カメラで撮影")
 
 if img_file is not None:
