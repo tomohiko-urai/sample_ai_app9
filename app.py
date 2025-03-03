@@ -45,7 +45,8 @@ if img_file is not None:
         img = Image.open(img_file)
     #with col2:
     with col1:  
-        st.image(img, caption="対象の画像", width=280)
+        #st.image(img, caption="対象の画像", width=280)
+        st.image(img, caption="対象の画像", use_column_width=True)
         st.write("")
 
         img = img.convert("RGB")
